@@ -1,0 +1,20 @@
+.categorie, .title{
+    border-bottom: 2px black solid;
+}
+
+#leftcolumn{
+    padding-right: 1%;
+    width: 250px;
+    height: auto;
+    background-color:#C0D472;
+}
+#leftcolumn h4{
+    font-size: 20px;
+}
+.info{
+    text-align: right;
+}
+
+.info h6, #leftcolumn h4{
+    font-weight: bold;
+}
