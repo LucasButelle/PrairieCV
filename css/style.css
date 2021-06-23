@@ -1,8 +1,168 @@
-.categorie, .title{
+/************************************************ Reset **************************************************/
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+/************************************************ Smartphone **************************************************/
+                                        /********** L'en-tête **********/
+
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    margin-top: 0px;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+}
+.sidebarMenuInner{
+    margin:0;
+    padding:0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li{
+    list-style: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 10.4px;
+    color: rgba(255, 255, 255, 0.50);
+}
+.sidebarMenuInner li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 22px;
+    right: 15px;
+    height: 22px;
+    width: 22px;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
+
+
+
+
+
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+#photo{
+    position: relative;
+    left: 30%;
+    top: 1%;
+    border: 2px black solid;
+    z-index: -10;
+}
+
+.infocenter{
+    text-align: center;
+}
+
+.tete{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+}
+
+.title{
     border-bottom: 2px black solid;
 }
 
+.pretext{
+    font-style: italic;
+    text-align: left;
+}
+
+.categorie{
+    border-bottom: 2px black solid;
+    text-align: left;
+    padding-top: 5%;
+    margin-bottom: 2%;
+}
+
+
+
 #leftcolumn{
+    display: flex;
+    flex-direction: column;
     padding-right: 1%;
     width: 250px;
     height: auto;
@@ -10,11 +170,32 @@
 }
 #leftcolumn h4{
     font-size: 20px;
+    padding-top: 5%;;
+    padding-bottom: 5%;;
+    text-align: center;
 }
+
+.block{
+    padding-left: 5%;
+}
+
+
 .info{
     text-align: right;
+    
 }
 
 .info h6, #leftcolumn h4{
     font-weight: bold;
+}
+
+h6{
+    font-size: 16px;
+    padding-top: 4%;
+}
+
+
+h3, h4{
+    padding-bottom: 0.2%;
+    margin-top: 3%;
 }

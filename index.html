@@ -5,24 +5,84 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mon CV</title>
-        <link rel="stylesheet" href="./css/bootstrap.css">
         <link rel="stylesheet" href="./css/style.css">
     </head>
 
     
         <body>
             <header>
-                <div>
-                    <h1>Lucas Butelle</h1>
+                </div>
+                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                <label for="openSidebarMenu" class="sidebarIconToggle">
+                    <div class="spinner diagonal part-1"></div>
+                    <div class="spinner horizontal"></div>
+                    <div class="spinner diagonal part-2"></div>
+                </label>
+                <div id="sidebarMenu">
+                    <ul class="sidebarMenuInner">
+                        <div id="leftcolumn">
+                            <h4>Information</h4>
+                                <div class="info">
+                                    <h6>Date de naissance</h6>
+                                    <p>02 Septembre 2000, 20 ans</p>
+        
+                                    <h6>Adresse</h6>
+                                    <p>33 rue Panetié</p>
+                                    <p>62200 Boulogne-sur-Mer</p>
+        
+                                    <h6>Langues</h6>
+                                    <p>Français - Langue maternelle</p>
+                                    <p>Anglais - Lu, écrit et parlé</p>
+                                    <p>Espagnol - Notion</p>
+        
+                                    <h6>Mobilité</h6>
+                                    <p>Voiture</p>
+                                </div>
+        
+                            <h4>Centre d'intêret</h4>
+                                <div class="infocenter">
+                                    <p >Séries TV</p>
+                                    <p>Développement Informatique</p>
+                                </div>
+        
+                            <h4>Réseaux Sociaux</h4>
+                            <div class="infocenter">
+                                <a href="https://www.facebook.com/lucas.butelle.62"><p>Facebook</p></a>
+                                <a href="https://www.linkedin.com/in/lucas-butelle-a4b396215/"><p>Linkedin</p></a>
+                                <p>Discord : FTK#3222</p>
+                            </div>
+        
+                            <h4>Contact</h4>
+                                <div class="infocenter">
+                                    <p>butelle.lucas.pro@gmail.com</p>
+                                    <p>06 70 90 59 91</p>
+                                </div>
+
+                            <h4>Atouts</h4>
+                                <div class="infocenter">
+                                    <p>Rigoureux<p>
+                                    <p>Volontaire<p>
+                                    <p>Spontané<p>
+                                    <p>Sérieux<p>
+                                    <p>Organisé<p>
+                                </div>
+                        </div>
+                    </ul>
+                </div>
+
+                <img src="./img/moi_mini.jpg" id="photo">
+                
+                <div class="tete">
+                    <h1>LUCAS</h1>
+                    <h1>Butelle</h1>
                     <h2 class="title">Developpeur web junior</h2>
-                    <p>Passionné par l'informatique, voir son évolution constante est pour moi fascinant.</p>
-                    <p>Pouvoir mettre ma touche dans le monde de l'informatique est incroyable.</p>
+                    <p class="pretext">Passionné par l'informatique, voir son évolution constante est pour moi fascinant. Pouvoir mettre ma touche dans le monde de l'informatique est incroyable.</p>
                 </div>
             </header>
 
             <main>
-                <div id="leftcolumn">
-                    <h4 class="text-center">Information</h4>
+                <!--<div id="leftcolumn">
+                    <h4>Information</h4>
                         <div class="info">
                             <h6>Date de naissance</h6>
                             <p>02 Septembre 2000, 20 ans</p>
@@ -40,26 +100,26 @@
                             <p>Voiture</p>
                         </div>
 
-                    <h4 class="text-center">Centre d'intêret</h4>
+                    <h4>Centre d'intêret</h4>
                         <ul>
                             <li>Séries TV</li>
                             <li>Développement Informatique</li>
                         </ul>
 
-                    <h4 class="text-center">Réseaux Sociaux</h4>
+                    <h4>Réseaux Sociaux</h4>
                     <ul>
-                        <li>Facebook : Lucas.butelle.62</li>
-                        <li>Linkedin : Lucas Butelle</li>
+                        <a href="https://www.facebook.com/lucas.butelle.62"><li>Facebook</li></a>
+                        <a href="https://www.linkedin.com/in/lucas-butelle-a4b396215/"><li>Linkedin</li></a>
                         <li>Discord : FTK#3222</li>
                     </ul>
 
-                    <h4 class="text-center">Contact</h4>
+                    <h4>Contact</h4>
                         <ul>
                             <li>butelle.lucas.pro@gmail.com</li>
                             <li>06 70 90 59 91</li>
                         </ul>
                     
-                    <h4 class="text-center">Atouts</h4>
+                    <h4>Atouts</h4>
                         <ul>
                             <li>Rigoureux</li>
                             <li>Volontaire</li>
@@ -67,7 +127,7 @@
                             <li>Sérieux</li>
                             <li>Organisé</li>
                         </ul>
-                </div>
+                </div>-->
 
                 <div id="ensemble">
                     <div class="block">
@@ -105,7 +165,7 @@
                     <div class="block">
                         <h2 class="categorie">Compétences</h2>
                             <ul>
-                                <li> Dépannage d'appareils électroménager & biomédical</li>
+                                <li>Dépannage d'appareils électroménager & biomédical</li>
                                 <li>Logiciels biomédical : E-magh2 - SOFIA</li>
                                 <li>Devis & Factures</li>
                                 <li>Installations & Dépannages électriques et d'alarmes Intrusion & Incendie</li>
