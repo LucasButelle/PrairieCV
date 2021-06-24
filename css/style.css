@@ -2,7 +2,7 @@
 
 *{
     margin: 0;
-    padding: 0;
+    padding: 0; 
     list-style-type: none;
     text-decoration: none;
     
@@ -11,40 +11,20 @@
                                         /********** L'en-tête **********/
 
 #sidebarMenu {
-    height: 100%;
+    height: auto;
     position: fixed;
     left: 0;
     width: 250px;
     margin-top: 0px;
     transform: translateX(-250px);
     transition: transform 250ms ease-in-out;
+    z-index: 30;
 }
 .sidebarMenuInner{
     margin:0;
     padding:0;
-    border-top: 1px solid rgba(255, 255, 255, 0.10);
 }
-.sidebarMenuInner li{
-    list-style: none;
-    color: black;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 20px;
-    cursor: pointer;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
-}
-.sidebarMenuInner li span{
-    display: block;
-    font-size: 10.4px;
-    color: rgba(255, 255, 255, 0.50);
-}
-.sidebarMenuInner li a{
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: none;
-}
+
 input[type="checkbox"]:checked ~ #sidebarMenu {
     transform: translateX(0);
 }
@@ -113,33 +93,44 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     margin-top: -9px;
 }
 
-
-
-
-
-
-
-main{
-    display: flex;
-    flex-direction: row;
+.info{
+    text-align: right;
 }
 
-#photo{
-    position: relative;
-    left: 30%;
-    top: 1%;
-    border: 2px black solid;
-    z-index: -10;
+#leftcolumn{
+    display: flex;
+    flex-direction: column;
+    padding-right: 2%;
+    width: auto;
+    height: auto;
+    background-color:#C0D472;
+    z-index: 99;
+}
+#leftcolumn h4{
+    font-size: 20px;
+    padding-top: 5%;;
+    padding-bottom: 5%;;
+    text-align: center;
 }
 
 .infocenter{
     text-align: center;
+    padding-bottom: 1%;
+}
+
+#photo{
+    position: absolute;
+    left: 67%;
+    border: 2px black solid;
+    z-index: -10;
+    width: 20%;
 }
 
 .tete{
     display: flex;
     flex-direction: column;
     padding-left: 5%;
+    padding-top: 2%;
 }
 
 .title{
@@ -151,39 +142,38 @@ main{
     text-align: left;
 }
 
-.categorie{
-    border-bottom: 2px black solid;
-    text-align: left;
-    padding-top: 5%;
-    margin-bottom: 2%;
+.button{
+    color: black;
+    border: 1px solid black;
+    border-radius: 200px;
+    padding: 0.5em;
+    margin: 10%;
 }
 
 
+.dark-mode{
+    background-color: black;
+    color: white;
+  }
 
-#leftcolumn{
+                                             /********** Le corps **********/
+
+main{
     display: flex;
-    flex-direction: column;
-    padding-right: 1%;
-    width: 250px;
-    height: auto;
-    background-color:#C0D472;
-}
-#leftcolumn h4{
-    font-size: 20px;
-    padding-top: 5%;;
-    padding-bottom: 5%;;
-    text-align: center;
+    flex-direction: row;
 }
 
 .block{
     padding-left: 5%;
 }
 
-
-.info{
-    text-align: right;
-    
+.categorie{
+    border-bottom: 2px black solid;
+    padding-top: 5%;
+    margin-bottom: 2%;
+    width: 100%;
 }
+
 
 .info h6, #leftcolumn h4{
     font-weight: bold;
@@ -198,4 +188,70 @@ h6{
 h3, h4{
     padding-bottom: 0.2%;
     margin-top: 3%;
+}
+
+#modal{
+    position: absolute;
+    left: 50%;
+    top: 115px;
+    transform: translate(-50%);
+    width: 300px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #C0D472;
+    padding-left: 1em;
+    display: none;
+    z-index: 20;
+}
+.fermer{
+    text-align: right;
+    margin-right: 1em;
+}
+
+#btn{
+    position: relative;
+    left: 22%;
+    margin-top: 10px;
+    color: black;
+    background-color: #C0D472;
+    border-radius: 10px;
+    padding: 1em;
+    outline: none;
+    width: 50%;
+    z-index: 1;
+}
+
+/************************************************ PC **************************************************/
+		
+@media screen and (min-width:768px){
+    
+    .spinner{
+        display: none;
+    }
+
+    #leftcolumn{
+        display: visible;
+        height: 1024px;
+    }
+    
+    .block{
+        padding-left: 5%;
+        margin-left: 50%;
+        width: 100%;
+    }
+
+    .tete{
+        margin-left: 9%;
+        padding-top: 50px;
+        width: 23%;
+    }
+
+    #photo{
+        position: absolute;
+        left: 30%;
+        border: 2px black solid;
+        z-index: -10;
+        width: 6%;
+    }
 }
