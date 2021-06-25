@@ -154,6 +154,38 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     background-color: rgb(80, 80, 80);
   }
 
+#facebook, #linkedin, #discord, #gmail, #phone{
+    position: absolute;
+    width: 15px;
+}
+
+#facebook, #linkedin{
+    left: 60px;
+}
+
+#facebook{
+    top: 60%;}
+
+#linkedin{
+    top: 62.5%;
+}
+
+#discord{
+    top: 65%;
+    left: 35px;
+}
+
+#gmail{
+    top: 75%;
+    left: 8px;
+}
+
+#phone{
+    top: 77.7%;
+    left: 50px;
+}
+
+
                                              /********** Le corps **********/
 
 main{
@@ -271,5 +303,28 @@ h3, h4{
         padding-left: 1em;
         display: none;
         z-index: 20;
+    }
+    
+    #facebook, #linkedin{
+        left: 60px;
+    }
+    
+    #facebook{
+        top: 47.7%;}
+    
+    #linkedin{
+        top: 49.5%;
+    }
+    
+    #discord{
+        top: 51.6%;
+    }
+    
+    #gmail{
+        top: 59.7%;
+    }
+    
+    #phone{
+        top: 61.7%;
     }
 }
