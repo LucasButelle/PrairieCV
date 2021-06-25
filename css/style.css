@@ -11,9 +11,8 @@
                                         /********** L'en-tête **********/
 
 #sidebarMenu {
-    height: auto;
-    position: fixed;
-    left: 0;
+    height: 100vh;
+    position: absolute;
     width: 250px;
     margin-top: 0px;
     transform: translateX(-250px);
@@ -102,7 +101,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     flex-direction: column;
     padding-right: 2%;
     width: auto;
-    height: auto;
+    height: 900px;
     background-color:#C0D472;
     z-index: 99;
 }
@@ -152,8 +151,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 
 .dark-mode{
-    background-color: black;
-    color: white;
+    background-color: rgb(80, 80, 80);
   }
 
                                              /********** Le corps **********/
@@ -225,7 +223,12 @@ h3, h4{
 /************************************************ PC **************************************************/
 		
 @media screen and (min-width:768px){
-    
+
+    #sidebarMenu {
+        transform: translateX(0px);
+        overflow: hidden;
+    }
+
     .spinner{
         display: none;
     }
@@ -253,5 +256,20 @@ h3, h4{
         border: 2px black solid;
         z-index: -10;
         width: 6%;
+    }
+
+    #modal{
+        position: absolute;
+        left: 25%;
+        top: 160px;
+        transform: translate(-50%);
+        width: 300px;
+        height: 100px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: #C0D472;
+        padding-left: 1em;
+        display: none;
+        z-index: 20;
     }
 }
