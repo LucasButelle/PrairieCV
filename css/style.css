@@ -3,13 +3,14 @@
 *{
     margin: 0;
     padding: 0; 
-    list-style-type: none;
     text-decoration: none;
     
 }
 /************************************************ Smartphone **************************************************/
-                                        /********** L'en-tête **********/
+                                        /********** Header **********/
 
+
+/********** SidebarMenu **********/         
 #sidebarMenu {
     height: 100vh;
     position: absolute;
@@ -92,10 +93,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     margin-top: -9px;
 }
 
-.info{
-    text-align: right;
-}
-
+/********** Green column **********/
 #leftcolumn{
     display: flex;
     flex-direction: column;
@@ -106,62 +104,16 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     z-index: 99;
     padding-top: 100px;
 }
+
 #leftcolumn h4{
     font-size: 20px;
     padding-top: 5%;;
     padding-bottom: 5%;;
     text-align: center;
 }
-
-
-#triangle-code{
-    position: absolute;
-    height : 0;
-    width : 0;
-    border-top : 140px solid grey;
-    border-right : 300px solid transparent;
-    z-index: 100;
-   }
-
-
-.infocenter{
-    text-align: center;
-    padding-bottom: 1%;
+.info{
+    text-align: right;
 }
-
-#photo{
-    position: absolute;
-    left: 67%;
-    border: 2px black solid;
-    z-index: -10;
-    width: 20%;
-    top: 110px;
-}
-
-.tete{
-    display: flex;
-    flex-direction: column;
-    padding-left: 5%;
-    padding-top: 125px;
-}
-
-.title{
-    border-bottom: 2px black solid;
-}
-
-.pretext{
-    font-style: italic;
-    text-align: left;
-}
-
-.button{
-    color: black;
-    border: 1px solid black;
-    border-radius: 200px;
-    padding: 0.5em;
-    margin: 10%;
-}
-
 
 .dark-mode{
     background-color: rgb(80, 80, 80);
@@ -198,8 +150,76 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     left: 50px;
 }
 
+.infocenter{
+    text-align: center;
+    padding-bottom: 1%;
+}
 
-                                             /********** Le corps **********/
+.info h6, #leftcolumn h4{
+    font-weight: bold;
+}
+
+h6{
+    font-size: 16px;
+    padding-top: 4%;
+}
+
+
+h3, h4{
+    padding-bottom: 0.2%;
+    margin-top: 3%;
+}
+
+#photo{
+    position: absolute;
+    left: 67%;
+    border: 2px black solid;
+    z-index: 10;
+    width: 20%;
+    top: 110px;
+}
+
+#deco{
+    position: absolute;
+    right: 0;
+    width: 225px;
+}
+
+.tete{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-top: 125px;
+}
+
+.title{
+    border-bottom: 2px black solid;
+    margin-right: 50px;
+}
+
+.pretext{
+    font-style: italic;
+    text-align: left;
+}
+
+.button{
+    color: black;
+    border: 1px solid black;
+    border-radius: 200px;
+    padding: 0.5em;
+    margin: 3%;
+}
+
+#triangle-code{
+    position: absolute;
+    height : 0;
+    width : 0;
+    border-top : 140px solid grey;
+    border-right : 300px solid transparent;
+    z-index: 100;
+   }
+
+/********** Body **********/
 
 main{
     display: flex;
@@ -218,20 +238,8 @@ main{
 }
 
 
-.info h6, #leftcolumn h4{
-    font-weight: bold;
-}
 
-h6{
-    font-size: 16px;
-    padding-top: 4%;
-}
-
-
-h3, h4{
-    padding-bottom: 0.2%;
-    margin-top: 3%;
-}
+/********** Modal **********/
 
 #modal{
     position: absolute;
@@ -279,29 +287,42 @@ h3, h4{
     }
 
     #leftcolumn{
-        display: visible;
         height: 1024px;
+        margin-top: 15%;
     }
     
     .block{
-        padding-left: 5%;
+        padding-left: 10%;
         margin-left: 50%;
         width: 100%;
+        border-right: 2px black solid;
     }
 
     .tete{
-        margin-left: 9%;
+        margin-left: 10.25%;
         padding-top: 50px;
-        width: 23%;
+        width: 23.9%;
+        border-right: 2px black solid;
+
+    }
+
+    .title{
+        margin-right: 175px;
     }
 
     #photo{
         position: absolute;
-        left: 30%;
-        border: 2px black solid;
-        z-index: -10;
+        border-color: #C0D472;
+        left: 65px;
         width: 6%;
         top: 0;
+        z-index: 999;
+    }
+
+    #deco{
+        position: absolute;
+        right: 60.8%;
+        width: 13%;
     }
 
     #modal{
@@ -324,22 +345,22 @@ h3, h4{
     }
     
     #facebook{
-        top: 58.5%;}
+        top: 62.5%;}
     
     #linkedin{
-        top: 60.4%;
+        top: 64.4%;
     }
     
     #discord{
-        top: 62.4%;
+        top: 66.3%;
     }
     
     #gmail{
-        top: 70.4%;
+        top: 74.5%;
     }
     
     #phone{
-        top: 72.4%;
+        top: 76.5%;
     }
 
     #triangle-code{
