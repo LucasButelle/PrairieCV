@@ -104,6 +104,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     height: 900px;
     background-color:#C0D472;
     z-index: 99;
+    padding-top: 100px;
 }
 #leftcolumn h4{
     font-size: 20px;
@@ -111,6 +112,17 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     padding-bottom: 5%;;
     text-align: center;
 }
+
+
+#triangle-code{
+    position: absolute;
+    height : 0;
+    width : 0;
+    border-top : 140px solid grey;
+    border-right : 300px solid transparent;
+    z-index: 100;
+   }
+
 
 .infocenter{
     text-align: center;
@@ -123,13 +135,14 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     border: 2px black solid;
     z-index: -10;
     width: 20%;
+    top: 110px;
 }
 
 .tete{
     display: flex;
     flex-direction: column;
     padding-left: 5%;
-    padding-top: 2%;
+    padding-top: 125px;
 }
 
 .title{
@@ -164,24 +177,24 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 
 #facebook{
-    top: 60%;}
+    top: 73.5%;}
 
 #linkedin{
-    top: 62.5%;
+    top: 76.2%;
 }
 
 #discord{
-    top: 65%;
+    top: 78.5%;
     left: 35px;
 }
 
 #gmail{
-    top: 75%;
+    top: 88.7%;
     left: 8px;
 }
 
 #phone{
-    top: 77.7%;
+    top: 91.2%;
     left: 50px;
 }
 
@@ -288,6 +301,7 @@ h3, h4{
         border: 2px black solid;
         z-index: -10;
         width: 6%;
+        top: 0;
     }
 
     #modal{
@@ -310,21 +324,39 @@ h3, h4{
     }
     
     #facebook{
-        top: 47.7%;}
+        top: 58.5%;}
     
     #linkedin{
-        top: 49.5%;
+        top: 60.4%;
     }
     
     #discord{
-        top: 51.6%;
+        top: 62.4%;
     }
     
     #gmail{
-        top: 59.7%;
+        top: 70.4%;
     }
     
     #phone{
-        top: 61.7%;
+        top: 72.4%;
     }
+
+    #triangle-code{
+        position: absolute;
+        height : 0;
+        width : 0;
+        border-top : 140px solid grey;
+        border-right : 400px solid transparent;
+        z-index: 100;
+       }
+
+       .info, h4{
+           z-index: 1;
+       }
+
+       #leftcolumn{
+        padding-top: 100px;
+    }
+       
 }
