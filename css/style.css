@@ -254,8 +254,8 @@ main{
     }
 
     #leftcolumn{
-        height: 1024px;
         margin-top: 13%;
+        height: 800px;
     }
     
     .block{
