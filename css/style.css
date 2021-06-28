@@ -70,7 +70,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     flex-direction: column;
     padding-right: 2%;
     width: auto;
-    height: 900px;
+    height: 1050px;
     background-color:#C0D472;
     z-index: 99;
     padding-top: 100px;
@@ -257,7 +257,7 @@ main{
 
     #leftcolumn{
         margin-top: 13%;
-        height: 800px;
+        height: 930px;
         border-left: 2px black solid;
     }
     
@@ -296,8 +296,9 @@ main{
 
     #deco{
         position: absolute;
-        right: 29%;
+        right: 28.9%;
         width: 13%;
+        border-right: 1px black solid;
     }
 
     #modal{
@@ -341,12 +342,8 @@ main{
         border-left: 2px black solid;
        }
 
-       .info, h4{
-           z-index: 1;
-       }
-
-       #leftcolumn{
-        padding-top: 100px;
+    .info, h4{
+        z-index: 1;
     }
 
     #leftcolumn h4{
