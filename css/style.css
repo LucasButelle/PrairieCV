@@ -218,6 +218,7 @@ main{
     background-color: #C0D472;
     padding-left: 1em;
     z-index: 20;
+    display: none;
 }
 
 .fermer{
