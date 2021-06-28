@@ -5,7 +5,8 @@
     padding: 0; 
     text-decoration: none;
     font-family: Cambria, Arial, Helvetica, sans-serif , Courier;
-    
+
+
 }
 /************************************************ Smartphone **************************************************/
                                         /********** Header **********/
@@ -99,25 +100,25 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 
 #facebook{
-    top: 75.2%;
+    top: 553px;
 }
 
 #linkedin{
-    top: 77.8%;
+    top: 572px;
 }
 
 #discord{
-    top: 80.4%;
+    top: 592px;
     left: 35px;
 }
 
 #gmail{
-    top: 90.5%;
+    top: 665px;
     left: 8px;
 }
 
 #phone{
-    top: 93.2%;
+    top: 685px;
     left: 50px;
 }
 
@@ -184,6 +185,7 @@ h3, h4{
     border-top : 140px solid grey;
     border-right : 300px solid transparent;
     z-index: 100;
+    border-left: 2px black solid;
    }
 
 /********** Body **********/
@@ -257,6 +259,7 @@ main{
     #leftcolumn{
         margin-top: 13%;
         height: 800px;
+        border-left: 2px black solid;
     }
     
     .block{
@@ -267,11 +270,16 @@ main{
     }
 
     .tete{
-        margin-left: 13.1%;
+        max-width: 800px;
+        width: 62.4%;
+        margin: auto;
+        margin-left: 260px;
         padding-top: 50px;
-        width: 23.9%;
         border-right: 2px black solid;
+    }
 
+    #btn{
+        width: 70%;
     }
 
     .title{
@@ -281,7 +289,7 @@ main{
     #photo{
         position: absolute;
         border-color: #C0D472;
-        left: 65px;
+        left: 615px;
         width: 6%;
         top: 0;
         z-index: 999;
@@ -289,13 +297,14 @@ main{
 
     #deco{
         position: absolute;
-        right: 57.9%;
+        right: 29%;
         width: 13%;
     }
 
     #modal{
-        left: 26%;
+        left: 57%;
         top: 180px;
+        width: 400px;
     }
 
     #btn{
@@ -342,5 +351,10 @@ main{
 
     #leftcolumn h4{
         padding-bottom: 3%;
-    }     
+    }
+
+    body{
+        max-width: 800px;
+        margin: auto;
+    }
 }
