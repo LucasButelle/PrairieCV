@@ -114,7 +114,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 #gmail{
     top: 665px;
-    left: 8px;
+    left: 4px;
 }
 
 #phone{
@@ -185,8 +185,7 @@ h3, h4{
     border-top : 140px solid grey;
     border-right : 300px solid transparent;
     z-index: 100;
-    border-left: 2px black solid;
-   }
+}
 
 /********** Body **********/
 
@@ -339,6 +338,7 @@ main{
         border-top : 140px solid grey;
         border-right : 400px solid transparent;
         z-index: 100;
+        border-left: 2px black solid;
        }
 
        .info, h4{
