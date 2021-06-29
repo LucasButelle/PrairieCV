@@ -6,7 +6,6 @@
     text-decoration: none;
     font-family: Cambria, Arial, Helvetica, sans-serif , Courier;
 
-
 }
 /************************************************ Smartphone **************************************************/
                                         /********** Header **********/
@@ -144,7 +143,7 @@ h3, h4{
 #photo{
     position: absolute;
     border : 2px black solid;
-    left: 40%;
+    left: 175px;
     width: 20%;
     top: 102px;
 }
@@ -243,9 +242,21 @@ main{
     font-weight: bold;
 }
 
-/************************************************ PC **************************************************/
+/************************************************ Tablette **************************************************/
 		
 @media screen and (min-width:768px){
+
+    #photo{
+        left: 350px;
+        width: 15%;
+        top: 80px;
+        z-index: 999;
+    }
+}
+
+/************************************************ PC **************************************************/
+		
+@media screen and (min-width:1024px){
 
     #sidebarMenu {
         transform: translateX(0px);
@@ -257,7 +268,7 @@ main{
 
     #leftcolumn{
         margin-top: 13%;
-        height: 930px;
+        height: 100%;
         border-left: 2px black solid;
     }
     
@@ -296,7 +307,7 @@ main{
 
     #deco{
         position: absolute;
-        right: 28.9%;
+        right: 550px;
         width: 13%;
         border-right: 1px black solid;
     }
