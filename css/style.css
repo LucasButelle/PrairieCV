@@ -179,7 +179,7 @@ h3, h4{
     text-align: left;
 }
 
-.button{
+#button{
     color: black;
     border: 1px solid black;
     border-radius: 200px;
