@@ -87,6 +87,14 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 .dark-mode{
     background-color: rgb(80, 80, 80);
+}
+
+  .dark-mode main, .dark-mode .tete{
+    color: white;
+  }
+
+  .dark-mode .title, .dark-mode .categorie{
+    border-color: white;
   }
 
 #facebook, #linkedin, #discord, #gmail, #phone{
@@ -151,7 +159,7 @@ h3, h4{
 #deco{
     position: absolute;
     right: 0;
-    width: 225px;
+    width: 55%;
 }
 
 .tete{
@@ -252,6 +260,12 @@ main{
         top: 80px;
         z-index: 999;
     }
+
+    #deco{
+        position: absolute;
+        right: 0px;
+        width: 30%;
+    }
 }
 
 /************************************************ PC **************************************************/
@@ -308,7 +322,7 @@ main{
     #deco{
         position: absolute;
         right: 550px;
-        width: 13%;
+        width: 14%;
         border-right: 1px black solid;
     }
 
