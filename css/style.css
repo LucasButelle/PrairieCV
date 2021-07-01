@@ -98,7 +98,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   }
 
 #facebook, #linkedin, #discord, #gmail, #phone{
-    position: absolute;
+    position: fixed;
     width: 15px;
 }
 
