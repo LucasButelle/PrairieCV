@@ -97,12 +97,16 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     background-color: rgb(80, 80, 80);
 }
 
-  .dark-mode main, .dark-mode .tete{
+  .dark-mode main, .dark-mode .tete, .dark-mode #btn{
     color: white;
   }
 
   .dark-mode .title, .dark-mode .categorie{
     border-color: white;
+  }
+
+  .dark-mode #leftcolumn, .dark-mode #modal, .dark-mode #btn{
+    background-color:#82914c;
   }
 
 #facebook, #linkedin, #discord, #gmail, #phone{
