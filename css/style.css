@@ -12,6 +12,14 @@
 
 /********** SidebarMenu **********/      
 
+html{
+    background-image: url(../img/image.jpg);
+}
+
+body{
+    background-color: white;
+}
+
 #sidebarMenu {
     height: 100vh;
     position: absolute;
