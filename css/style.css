@@ -13,6 +13,8 @@
 /********** SidebarMenu **********/      
 
 html{
+    margin: 0;
+    padding: 0;
     background-image: url(../img/image.jpg);
 }
 
