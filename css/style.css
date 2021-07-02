@@ -114,6 +114,17 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     width: 15px;
 }
 
+#facebook, #linkedin, #discord, #gmail, #phone, #btn{
+    -webkit-animation:spin 2s linear 2;
+    -moz-animation:spin 2s linear 2;
+    animation:spin 2s linear 2;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
 #facebook, #linkedin{
     left: 60px;
 }
